@@ -5,21 +5,23 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
-
 {
     public function index()
     {
-        $products = [
-            ['name' => 'Spirited Away'],
+        $anime = array (
+            [
+                "title" => "Attack on Titan",
+                "genre" => "Action, Fantasy",
+                "episodes" => 87
+            ],
+            [
+                "title" => "My Hero Academia",
+                "genre" => "Action, Adventure",
+                "episodes" => 131
+            ],
+            // Add more anime entries here
+        );
 
-            ['name' => 'Your Name'],
-
-            ['name' => 'A Silent Voice'],
-        ];
-
-
-        return view('products.index', compact('products'));
-
+        return view('index', compact('anime')); // Pass data to view
     }
-
 }
