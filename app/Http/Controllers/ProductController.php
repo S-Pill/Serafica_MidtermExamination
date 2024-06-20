@@ -10,11 +10,11 @@ class ProductController extends Controller
     public function index()
     {
         $products = [
-            ['name' => 'Anime', 'price' => 100],
+            ['name' => 'Spirited Away'],
 
-            ['name' => 'Anime', 'price' => 150],
+            ['name' => 'Your Name'],
 
-            ['name' => 'Anime', 'price' => 200],
+            ['name' => 'A Silent Voice'],
         ];
 
 
